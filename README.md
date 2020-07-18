@@ -2,7 +2,7 @@
 
 ## Objective
 
-This capstone aims to analyze the relative stock performances of Big 3 monitoring companies ([Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/)) and explore who is gaining most as we are adjusting to a new normal. 
+This capstone aims to analyze the relative stock performances of Big 3 monitoring companies ([Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/)) and explore who is gaining most as we are adjusting to the post-covid world. 
 
 ## Introduction
 
@@ -29,5 +29,13 @@ My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the 
 *  Answer who is gaining most among the Big 3.
 
 
+---
+## OKR
+
+* July 20: Collect data 
+* July 21: Data reading and basic EDA
+* July 22: Complete EDA and start hypothesis testing
+* July 23: Complete hypothesis testing
+* July 24: Refinement and Presentation
 
 
