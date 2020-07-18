@@ -25,8 +25,8 @@ My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the 
 
 ## Conclusion
 
-* Answer if Covid indeed affected stock prices of Big 3 monitoring companies.
-* Answer who is gaining most among the Big 3.
+*  Answer if Covid indeed affected stock prices of Big 3 monitoring companies.
+*  Answer who is gaining most among the Big 3.
 
 
 
