@@ -6,12 +6,11 @@ The objective of this capstone 1 is to utilize the EDA, statistical analyses, an
 
 ## Introduction
 
-Service disruptions, especially site loading delays, 404 erros and others, are a major issue for consumes and enterprises, alike. Together they lead to $100B annual loss, on avaerage, from lost revenue, traffic attrition, and lost productiviity. There are some wesbites like  
-[downdetector.com](https://downdetector.com/) which document major incidents every day. A large number of incidents necessiates the need for using data analysis for extracting actionable insight about the distribution of the incidents across the enterprises and duration. 
+Internet service disruptions, especially site loading delays, 404 erros and others, are a major issue for consumes and enterprises, alike. Together they lead to $100B annual loss, on avaerage, from lost revenue, traffic attrition, and lost productiviity. With increased footprint of online workplace following Covid, service disruptions have become more frequent and longer. It seems the service monitoring companies like [Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/) are benefiting from this trend. This capstone pertains to relative stock performance of Big-3 monitoring companies and explore who is gaining most as we are adjusting to a new normal. 
 
 ## Data 
 
-I am intending to scrap internet. Two great sources of data are [downdetector.com](https://downdetector.com/) API and Google API. I need to explore if Downdetector a bit to see if I can scarp data from them. I have scrap Google API before. 
+I am intending to scrap internet to find stock prices for monitoring solutions.  I need to explore if Downdetector a bit to see if I can scarp data from them. I have scrap Google API before. 
 
 * I will try figure out the feasibility of the data sources over the weekend. As a backup, I will have to have to use [Google Dataset](https://datasetsearch.research.google.com/).
 
@@ -21,6 +20,15 @@ I am personally very excited to learn if Covid has cause more incident frequency
 
 ---
 
-My null hypothesis (H0)will be that Covid does not have any 
+My null hypothesis (H0) will be that Covid does not have any impact on the sales of monitoring solution. My alternative hypothesis (H0) will be that Covid does have any impact on the sales of monitoring solution.
+
+
 
 ## Conclusion
+
+* Answer if Covid indeed affected the sales of monitoring solutions with stock price being the metric.
+* Answer who is gaining/losing most among the Big-3.
+
+
+
+
