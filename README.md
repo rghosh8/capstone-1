@@ -6,7 +6,7 @@ The objective of this capstone 1 is to utilize the EDA, statistical analyses, an
 
 ## Introduction
 
-Internet service disruptions, especially site loading delays, 404 erros and others, are a major issue for consumes and enterprises, alike. Together they lead to $100B annual loss, on avaerage, from lost revenue, traffic attrition, and lost productiviity. With increased footprint of online workplace following Covid, service disruptions have become more frequent and longer. It seems the service monitoring companies like [Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/) are benefiting from this trend. This capstone pertains to relative stock performance of Big-3 monitoring companies and explore who is gaining most as we are adjusting to a new normal. 
+Internet service disruptions, especially site loading delays, 404 erros and others, are a major issue for consumes and enterprises, alike. Together they lead to $100B annual loss, on avaerage, from lost revenue, traffic attrition, and lost productiviity. With increased footprint of online workplace following Covid, service disruptions have become more frequent and longer. It seems the service monitoring companies like [Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/) are benefiting from this trend. This capstone pertains to relative stock performances of Big-3 monitoring companies and explore who is gaining most as we are adjusting to a new normal. 
 
 ## Data 
 
