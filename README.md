@@ -11,7 +11,7 @@ Service disruptions, especially site loading delays, 404 erros and others, are a
 
 ## Data 
 
-I am intending to scrap internet. Two great sources of data are ![downdetector.com](https://downdetector.com/ "downdetector.com") API and Google API. I need to explore if Downdetector a bit to see if I can scarp data from them. I have scrap Google API before. 
+I am intending to scrap internet. Two great sources of data are [https://downdetector.com/][downdetector.com] API and Google API. I need to explore if Downdetector a bit to see if I can scarp data from them. I have scrap Google API before. 
 
 * I will try figure out the feasibility of the data sources over the weekend. As a backup, I will have to have to use ![Google Data Search](https://datasetsearch.research.google.com/ "datasetsearch.research.google.com/")
 
