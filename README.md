@@ -10,9 +10,7 @@ Internet service disruptions, especially site loading delays, 404 erros and othe
 
 ## Data 
 
-I am intending to scrap internet to find stock prices for monitoring solutions.  I need to explore if Downdetector a bit to see if I can scarp data from them. I have scrap Google API before. 
-
-* I will try figure out the feasibility of the data sources over the weekend. As a backup, I will have to have to use [Google Dataset](https://datasetsearch.research.google.com/).
+I am intending to scrap internet to find stock prices for monitoring solutions.  
 
 ## Data Analysis
 
