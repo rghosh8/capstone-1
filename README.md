@@ -18,16 +18,15 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 
 
 
----
-
-My null hypothesis (H0) will be that Covid does not have any impact on the sales of monitoring solution. My alternative hypothesis (H0) will be that Covid does have any impact on the sales of monitoring solution.
+My null hypothesis (H<sub>0</sub>) is that Covid does <b>not</b> have any impact on the stock prices of Big 3 monitoring comapnies. 
+My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the stock prices of Big 3 monitoring comapnies. 
 
 
 
 ## Conclusion
 
-* Answer if Covid indeed affected the sales of monitoring solutions with stock price being the metric.
-* Answer who is gaining/losing most among the Big-3.
+* Answer if Covid indeed affected stock prices of Big 3 monitoring companies.
+* Answer who is gaining most among the Big 3.
 
 
 
