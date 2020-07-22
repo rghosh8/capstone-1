@@ -24,7 +24,7 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 
 ![](./figures/before_after_Histogram_Normalized_Diff.png)
 
-<!-- ![](./figures/cumul.png) -->
+![](./figures/cumul.png)
 
 
 |           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
