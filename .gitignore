@@ -1,1 +1,7 @@
-data\
+#ignore mac system file
+.DS_Store
+#ignore my data folder bc the data is really big and uploads slow
+data/
+#ignore the files that VSCode makes
+.vscode
+
