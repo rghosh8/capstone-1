@@ -1,4 +1,4 @@
-# Statistical Assessment of the Impact of Covid-19 on the Stock Performacne for Four Large Application Monitoring Companies 
+# Statistical Assessment of the Impact of Covid-19 on the Stock Performance for Four Large Application Monitoring Companies 
 
 ## Objective
 
