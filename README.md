@@ -1,8 +1,8 @@
-# capstone-1
+# Statistical Assessment of the Impact of Covid-19 on the Stock Performacne for Four Large Application Monitoring Companies 
 
 ## Objective
 
-This capstone aims to analyze the relative stock performances of Big 3 monitoring companies ([Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/)) and explore who is gaining most as we are adjusting to the post-covid world. 
+This capstone aims to analyze the relative stock performances of Big 3 monitoring companies ([Splunk](https://www.splunk.com/), [Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/)) and explore who is gaining most as we are adjusting to the post-covid world. 
 
 ## Introduction
 
