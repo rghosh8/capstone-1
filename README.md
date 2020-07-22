@@ -14,6 +14,8 @@ Internet service disruptions, especially site loading delays, 404 erros and othe
 
 I am intending to scrap internet to compile stock prices for monitoring solutions.  
 
+![](./figures/baseline.png )
+
 ## Data Analysis
 
 
