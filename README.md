@@ -22,15 +22,11 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 * My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the stock prices of Big 3 monitoring comapnies. 
 
 |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
-| ------------- |:-------------:|:-------------:|:-------------:|-------------:|
+| ------------- |:-------------:|:-------------:|:-------------:|--------------|
 | t_stat        |  -2.014599    |  -2.298923    |   -1.544077   |  -1.998822   |
 | p_value       |   0.045554    |   0.023007    |    0.124407   |   0.047177   |
 
 
-
-<!-- Splunk	Datadog	Dynatrace	New Relic
-# t_stat	-2.014599	-2.298923	-1.544077	-1.998822
-# p_val	0.045554	0.023007	0.124407	0.047177 -->
 
 ## Conclusion
 
