@@ -1,3 +1,7 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 #ignore mac system file
 .DS_Store
 #ignore my data folder bc the data is really big and uploads slow
