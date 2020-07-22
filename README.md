@@ -32,9 +32,11 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 |Before/On  | Mean          |  -0.228    |  -0.039    |   0.008   |  -0.222   |
 |3/16/20    | Std. Dev.     |   4.612    |   1.699    |    1.101   |   1.781   |
 |           | Std. Error    |0.45|0.166|0.107|0.174|
+|           | Rise Frac.   |0.53|0.50|0.51|0.47|
 |After      | Mean          |1.28|0.733|0.275|0.326|
 |3/16/20    | Std. Dev.     |5.582|2.727|1.263|1.983|
-|           | Std. Error    |0.598|0.292|0.135|0.213
+|           | Std. Error    |0.598|0.292|0.135|0.213|
+|           | Rise Frac.       |0.63|0.67|0.62|0.55|
 
 ## Hypothesis Analysis
 
