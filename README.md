@@ -24,6 +24,15 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 
 ![](./figures/before_after_Histogram_Normalized_Diff.png)
 
+|           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
+|-----------|:-------------:|:-------------:|:-------------:|:-------------:|--------------|
+|Before/On  | Mean          |  -0.228    |  -0.039    |   0.008   |  -0.222   |
+|3/16/20    | Std. Dev.     |   4.612    |   1.699    |    1.101   |   1.781   |
+|           | Std. Error    |0.45|0.166|0.107|0.174|
+|After      | Mean          |1.28|0.733|0.275|0.326|
+|3/16/20    | Std. Dev.     |5.582|2.727|1.263|1.983|
+|           | Std. Error    |0.598|0.292|0.135|0.213
+
 ## Hypothesis Analysis
 
 * My null hypothesis (H<sub>0</sub>) is that Covid does <b>not</b> have any impact on the stock prices of Big 3 monitoring comapnies. 
