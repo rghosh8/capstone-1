@@ -1,6 +1,6 @@
 import pandas as pd
 
-class data_assessment(object):
+class data_frame(object):
     # parse basic statistical properties of data
     def __init__(self, filepath, reference_date: str, current_date: str, moveback_date:str):
         self.filepath = filepath
