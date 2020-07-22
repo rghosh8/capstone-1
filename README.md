@@ -21,11 +21,17 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 * My null hypothesis (H<sub>0</sub>) is that Covid does <b>not</b> have any impact on the stock prices of Big 3 monitoring comapnies. 
 * My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the stock prices of Big 3 monitoring comapnies. 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
+| ------------- |:-------------:|:-------------:|:-------------:|-------------:|
+| t_stat        |  -2.014599    |  -2.298923    |   -1.544077   |  -1.998822   |
+| p_value       |   0.045554    |   0.023007    |    0.124407   |   0.047177   |
+
+
+
+
+	Splunk	Datadog	Dynatrace	New Relic
+t_stat	-2.014599	-2.298923	-1.544077	-1.998822
+p_val	0.045554	0.023007	0.124407	0.047177
 
 ## Conclusion
 
