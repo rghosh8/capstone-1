@@ -16,6 +16,8 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 
 ![](./figures/baseline.png )
 
+![](./figures/comparison.png )
+
 ## Data Analysis
 
 
