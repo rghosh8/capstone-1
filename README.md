@@ -21,6 +21,7 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 ## Data Analysis
 
 ![](./figures/ before_after_diff_distribution.png)
+
 ![](./figures/before_after_Histogram_Normalized_Diff.png)
 
 ## Hypothesis Analysis
