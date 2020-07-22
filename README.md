@@ -33,7 +33,7 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 ## OKR
 
 ~~July 20: Collect data~~
-~~July 21: Data reading and basic EDA
+~~July 21: Data reading and basic EDA~~
 * July 22: Complete EDA and start hypothesis testing
 * July 23: Complete hypothesis testing
 * July 24: Refinement and Presentation
