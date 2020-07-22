@@ -20,7 +20,10 @@ I am intending to scrap internet to compile stock prices for monitoring solution
 
 ## Data Analysis
 
+![](./figures/before_after.png)
+![](./figures/before_after_diff_disribution.png)
 
+## Hypothesis Analysis
 
 * My null hypothesis (H<sub>0</sub>) is that Covid does <b>not</b> have any impact on the stock prices of Big 3 monitoring comapnies. 
 * My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the stock prices of Big 3 monitoring comapnies. 
