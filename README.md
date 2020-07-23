@@ -86,7 +86,22 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 | p_value       |   0.045554    |   0.023007    |    0.124407   |   0.047177   |
 
 
-## Computational Complexity
+## Stationarity Testing 
+
+|           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
+|-----------|:-------------:|:-------------:|:-------------:|:-------------:|--------------|
+|Before/On  | ADF           | |    |    |    |
+|3/16/20    | p-value       |   |     |     |      |
+|           | 1%            |||||
+|           | 5%            |||||
+|           | 10%           | | | | |
+|After      | ADF           |  |     |     |     |
+|3/16/20    | p-value       |        |       |       |      |
+|           | 1%            |||||
+|           | 5%            |||||
+|           | 10%           | | | | |
+
+
 
 ## Summary
 
