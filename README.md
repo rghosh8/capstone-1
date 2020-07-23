@@ -22,6 +22,13 @@ First a baseline study has been performed with the S&P 500 data with the same ti
 
 ![](./figures/baseline.png )
 
+
+
+|           |   S&P 500  |     
+| ----------|:----------:|
+| t_stat    |  -1.663    |  
+| p_value   |   0.097    |   
+
 ![](./figures/comparison.png )
 
 ## Data Analysis
