@@ -86,8 +86,9 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 | p_value       |   0.045554    |   0.023007    |    0.124407   |   0.047177   |
 
 
+## Computational Complexity
 
-## Conclusion
+## Summary
 
 *  Answer if Covid indeed affected stock prices of Big 3 monitoring companies.
 *  Answer who is gaining most among the Big 3.
