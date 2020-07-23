@@ -18,6 +18,19 @@ A Frequestist hypothesis testing methodology will be used. It entails following 
   
 * Choose an appropriate level of significance 
   * \alpha = 0.05 (following the convention)
+  
+* Choose a statistical test and find the test statistic
+  * t because this study involves time series data which does not follow _i.i.d_ and it is difficult to assess the underlying distrinution. 
+  
+* Compute the probability of null hypothesis is true
+  * p-value
+  ```
+   scipy.stats.ttest_ind(a, b, axis=0, equal_var=True, nan_policy='propagate')[source]
+  ```
+* Compare p-value with \alpha to draw a conclusion:
+  * if p<=\alpha, Reject Null in favor of Alternative
+  * if p>alpha, Fail to reject Null _w.r.t_ Alternative
+
 
 ## Data 
 
