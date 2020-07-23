@@ -51,6 +51,9 @@ First a baseline study has been performed with the S&P 500 data with the same ti
 | t_stat    |  -1.663    |  
 | p_value   |   0.097    |   
 
+Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alternative hypothesis. It means we can conclude that Covid-19 has no impact on S&P 500 stock performance. 
+
+
 ![](./figures/comparison.png )
 
 ## Data Analysis
