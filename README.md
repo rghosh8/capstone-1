@@ -1,4 +1,4 @@
-# Statistical Assessment of the Impact of Covid-19 on the Stock Performance for Four Large Application Monitoring Companies 
+# Statistical Assessment of the Impact of Covid-19 on the Stock Performances for Four Large Application Monitoring Companies 
 
 ## Objective
 
@@ -53,10 +53,11 @@ First a baseline study has been performed with the S&P 500 data with the same ti
 
 Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alternative hypothesis. It means we can conclude that Covid-19 has no impact on S&P 500 stock performance. 
 
+## Hypothesis Testing for the Stock Performances of Monitoring Companies
+
+### Data Analysis
 
 ![](./figures/comparison.png )
-
-## Data Analysis
 
 ![](./figures/before_after_diff_distribution.png)
 
@@ -76,10 +77,8 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 |           | Std. Error    |0.598|0.292|0.135|0.213|
 |           | Rise Frac.       |0.63|0.67|0.62|0.55|
 
-## Hypothesis Testing
+### Hypothesis Testing 
 
-* My null hypothesis (H<sub>0</sub>) is that Covid does <b>not</b> have any impact on the stock prices of Big 3 monitoring comapnies. 
-* My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the stock prices of Big 3 monitoring comapnies. 
 
 |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
 | ------------- |:-------------:|:-------------:|:-------------:|--------------|
