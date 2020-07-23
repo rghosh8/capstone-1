@@ -53,6 +53,35 @@ First a baseline study has been performed with the S&P 500 data with the same ti
 
 Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alternative hypothesis. It means we can conclude that Covid-19 has no impact on S&P 500 stock performance. 
 
+#### Stationarity Test for S&P 500 Data
+
+
+|           |               |     Splunk    |     | 
+|-----------|:-------------:|:-------------:|
+|Before/On  | ADF           |-0.743115.     |   |
+|3/16/20    | p-value       |0.835263       |      |
+|           | 1%            |-3.500379      |     |
+|           | 5%            |-2.892152      |     |
+|           | 10%           |-2.583100      |    |
+|After      | ADF           |-6.176711      |  |
+|3/16/20    | p-value       |6.603631e-08   |   |
+|           | 1%            |-3.510712e+00  |
+|           | 5%            |-2.896616e+00  |
+|           | 10%           |-2.585482e+00  |
+
+stationarity_test('../data/GSPC.csv')
+{'before': {'ADF': -4.133036836860251,
+  'p-value': 0.0008536580558826142,
+  '1%': -3.4961490537199116,
+  '5%': -2.8903209639580556,
+  '10%': -2.5821223452518263},
+ 'after': {'ADF': -9.94173917906023,
+  'p-value': 2.6532228493611306e-17,
+  '1%': -3.5087828609430614,
+  '5%': -2.895783561573195,
+  '10%': -2.5850381719848565}}
+
+
 ## Hypothesis Testing for the Stock Performances of Monitoring Companies
 
 ### Data Analysis
