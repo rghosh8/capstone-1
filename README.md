@@ -13,10 +13,11 @@ Internet service disruptions, especially site loading delays, 404 erros and othe
 A Frequestist hypothesis testing methodology will be used. It entails following steps:
 
 * Asking a close-ended question where answers should be one of the two mutually exclusive statements.
-** Null: Covid-19 has no impact on stock performance
-** Alternative: Covid-19 has impact on stock performance
+  * Null: Covid-19 has no impact on stock performance.
+  * Alternative: Covid-19 has impact on stock performance.
+  
 * Choose an appropriate level of significance 
-** \alpha = 0.05 (following a convention)
+  * \alpha = 0.05 (following the convention)
 
 ## Data 
 
