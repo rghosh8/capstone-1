@@ -2,7 +2,7 @@
 
 ## Objective
 
-This capstone aims to analyze the relative stock performances of Big 3 monitoring companies ([Splunk](https://www.splunk.com/), [Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/)) and explore who is gaining most as we are adjusting to the post-covid world. 
+This capstone aims to analyze the relative stock performances of four large application monitoring companies ([Splunk](https://www.splunk.com/), [Datadog](https://datadoghq.com), [New Relic](https://newrelic.com/), [Dynatrace](https://www.dynatrace.com/)) and explore who is gaining most as we are adjusting to the post-covid world. 
 
 ## Introduction
 
@@ -14,7 +14,11 @@ Internet service disruptions, especially site loading delays, 404 erros and othe
 
 ### Data Source
 
-The time series stock data used in this capstone was collected from [Yahoo Finance Website](https://finance.yahoo.com/). The stock data is compiled over a year starting from July 20, 2020. 
+The time series stock data used in this capstone was collected from [Yahoo Finance Website](https://finance.yahoo.com/). The stock data is compiled over a year starting from July 20, 2020. Yahoo! Finance records stock data every business data at 9:30AM (EST), 4PM (EST). In addition to these two datapoints, daily highest and lowest stock prices are also noted. 
+
+### Baseline Study
+
+First a baseline study has been performed with the S&P 500 data with the same timeframe. The S&P 500 is a stock market metric that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices, and is regarded as one of the best representations of the U.S. stock market. This baseline study pertains to the validity of the null hypothesis that Covid has no statistically significant impact on the stock price. For this Hypothesis testing, two samples of the data drawn from the original 1 yr. long data corpus. One dataset spans from <b>Oct 15, 2019-March 16, 2020</b> and another spans from <b>March 17, 2020-July 20, 2020</b>. 
 
 ![](./figures/baseline.png )
 
