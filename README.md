@@ -8,7 +8,12 @@ This capstone aims to analyze the relative stock performances of four large appl
 
 Internet service disruptions, especially site loading delays, 404 erros and others, are a major issue for consumes and enterprises, alike.  With increased footprint of online workplace following <b>Covid</b>, service disruptions have become more frequent and longer. It seems the service monitoring companies are benefiting from this trend, going by their stock performances ([Splunk Stock](https://www.google.com/search?tbm=fin&sxsrf=ALeKk02Uh5eiv9qdTCusgE160E8P5bGsWw:1595479080419&q=NASDAQ:+SPLK&stick=H4sIAAAAAAAAAONgecRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uXj10_UNDZOSTc0LcuPNeRax8vg5Brs4BlopBAf4eAMA3qoDpUwAAAA&sa=X&ved=2ahUKEwj3t9bexuLqAhXlLX0KHcnnDkYQ3ecFMAB6BAgvEBM&biw=1920&bih=969#scso=_LRQZX7m-EYq10PEP-ZqbmAk1:0), [Datadog Stock](https://www.google.com/search?tbm=fin&sxsrf=ALeKk00Ihr9BF2iwnPYR-HqMNTVyx-xqMQ:1595036432459&q=NASDAQ:+DDOG&stick=H4sIAAAAAAAAAONgecRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uXj10_UNDTNSKpMsyo0reRax8vg5Brs4BlopuLj4uwMAvo1YEEwAAAA&sa=X&ved=2ahUKEwjejdff1dXqAhX5CTQIHYeeCUcQ3ecFMAB6BAgnEBM&biw=1920&bih=969&dpr=2#scso=_KlMSX_WfFJ2_0PEP_rSr2Ak1:0&wptab=OVERVIEW), [New Relic Stock](https://www.google.com/search?biw=1920&bih=969&tbm=fin&sxsrf=ALeKk01RFyfTYoHCK3bc7KJ4UJvf-grQQA%3A1595036458339&ei=KlMSX_WfFJ2_0PEP_rSr2Ak&stick=H4sIAAAAAAAAAONgecRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uXj10_UNDZOSTYuzCpOKeQCmvyz6PQAAAA&q=NYSE%3A+NEWR&oq=New+relic&gs_l=finance-immersive.1.0.81l2.56294.67618.0.68967.17.17.0.0.0.0.152.1688.6j10.16.0....0...1.1.64.finance-immersive..1.15.1588.0...0.q_WU8NmPGHA#scso=_cFMSX9HUHKSx0PEPxNyJoAY1:0), [Dynatrace Stock](https://www.google.com/search?biw=1920&bih=969&tbm=fin&sxsrf=ALeKk016Zg4oPACGZBdo5bIm4c0oHp93Mg%3A1595036528477&ei=cFMSX9HUHKSx0PEPxNyJoAY&q=NYSE%3A+DY&oq=NYSE%3A+DY&gs_l=finance-immersive.3..81l3.41202.43033.0.43381.6.6.0.0.0.0.112.586.3j3.6.0....0...1.1.64.finance-immersive..0.6.584....0.VHJFwHMrLNo#scso=_nVMSX5uOBZLV9AOtpb2IDw1:0)). 
 
+## Hypothesis Testing Methodology
 
+A Frequestist hypothesis testing methodology will be used. It entails following steps:
+
+* Asking a close-ended question where answers should be one of the two mutually exclusive statements. 
+* Choose a level of significance (\alpha)
 
 ## Data 
 
@@ -51,7 +56,7 @@ First a baseline study has been performed with the S&P 500 data with the same ti
 |           | Std. Error    |0.598|0.292|0.135|0.213|
 |           | Rise Frac.       |0.63|0.67|0.62|0.55|
 
-## Hypothesis Analysis
+## Hypothesis Testing
 
 * My null hypothesis (H<sub>0</sub>) is that Covid does <b>not</b> have any impact on the stock prices of Big 3 monitoring comapnies. 
 * My alternative hypothesis (H<sub>1</sub>) is that Covid does have impact on the stock prices of Big 3 monitoring comapnies. 
