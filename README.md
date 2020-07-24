@@ -138,14 +138,17 @@ First, we performed ADF stationarity testing on the Pct_Diff values for all comp
 |           | 10%           |-2.585482e+00  |-2.585038e+00  | -2.585038e+00| -2.585038e+00|
 
 ---
-The stationarity of the time series segements could be further evaluated from the follow control chart of Pct_Diff. 
+The stationarity of the time series segements could be further evaluated from the follow control chart of Pct_Diff. The solid horizontal line is the sample mean and two vertical line together represent 99% confidence interval. 
+
+
+
 ![](./figures/before_after_diff_distribution.png)
 
 #### Statistical Analysis
 
 <!-- ![](./figures/before_after_Histogram_Normalized_Diff.png) -->
 
-![](./figures/cumul.png)
+The statistical properties of two time series sub-samples before and after March 16, 2020 are computed and listed in the following table. In addition to traditional statistical properties, such as mean, standard deviation, and standard error, we also compute <b>Risk Fraction</b> which is defined as the the number of positive points in the sample. Since the statistic deals with Daily % Change, Rise Fraction inform how many positive changes has happened in a sample space. 
 
 
 |           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
@@ -153,23 +156,39 @@ The stationarity of the time series segements could be further evaluated from th
 |10/15/19-  | Mean          |  -0.228    |  -0.039    |   0.008   |  -0.222   |
 |03/16/20    | Std. Dev.     |   4.612    |   1.699    |    1.101   |   1.781   |
 |           | Std. Error    |0.45|0.166|0.107|0.174|
-|           | Rise Frac.   |0.53|0.50|0.51|0.47|
+|           | Rise Fraction   |0.53|0.50|0.51|0.47|
 |03/17/20-      | Mean          |1.28|0.733|0.275|0.326|
 |07/20/20    | Std. Dev.     |5.582|2.727|1.263|1.983|
 |           | Std. Error    |0.598|0.292|0.135|0.213|
-|           | Rise Frac.       |0.63|0.67|0.62|0.55|
+|           | Rise Fraction       |0.63|0.67|0.62|0.55|
 
+The following distribution shows cumulative sum of % daily change. The red scatter plot observed to have around 10% more positve points that means <b>in general companies see more better stock performacne after 03/16/20</b>.
+
+![](./figures/cumul.png)
 
 ## Hypothesis Testing for the Stock Performances of Monitoring Companies
 
+While a general observation was made that the stock performance is better 03/16/20, it is important to assess the statisitcal significance of these observation. That entails examination of our null hypothesis that there has been not impact on stock performance due to Covid. 
 
 #### Frequentist Hypothesis Testing 
+
+A t-test was performed based on the function mentioned in the Methodology section. 
 
 
 |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
 | ------------- |:-------------:|:-------------:|:-------------:|--------------|
 | t_stat        |  -2.014599    |  -2.298923    |   -1.544077   |  -1.998822   |
-| p_value       |   0.045554    |   0.023007    |    0.124407   |   0.047177   |
+| p_value       |   0.045       |   0.023       |    0.124      |   0.047      |
+
+With this t-test, following conclusions could be drawn:
+
+* Except for Dynatrace, all monitoring companies are doing better after 03/16/20.
+* Datadog appears to be gaining most.
+* Supporting ground Truth
+   ** Datadog has been a top-performing stock in Q2 [Link](https://www.fool.com/investing/2020/07/04/why-datadog-stock-surged-22-in-june.aspx)
+* Possible Cause
+   ** Covid has driven a increase in online workplace. It means there is a increase need for cloud computing, as evident from the massive growth of GCP, Azure, and AWS in Q2-20. With cloud computing, there is an increased need for real-time monitoring of cloud resources. Datadog fits that bill perfectly. Dynatrace, on the other hand, focused mostly on traditonal code-level monitoring. A code-level monitoring solution not critical important as cloud resource monitoring in the present scheme of things.  
+   
 
 
 #### Bayesian Testing 
