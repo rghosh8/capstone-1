@@ -42,11 +42,28 @@ A Frequestist hypothesis testing methodology will be used. It entails following 
 
 The time series stock data used in this capstone was collected from [Yahoo Finance Website](https://finance.yahoo.com/). The stock data is compiled over a year starting from July 20, 2020. Yahoo! Finance records stock data every business data at 9:30AM (EST), 4PM (EST). In addition to these two datapoints, daily highest and lowest stock prices are also noted. 
 
-## Raw Data Visualization
+### Raw Data 
 
+![](./figures/raw_data.png)
+![](./figures/splunk_candlestick.png)
 ![](./figures/heatmap.png )
 ![](./figures/comparison.png )
 
+### Transformed Data 
+
+* Change the index to data
+* Add four different columns
+   * Diff: First order rowwise difference 
+   * <b>Pct_Diff: Daily Percentage Diff _w.r.t._ Previous Day</b>
+   * Normalized_Close: Close _w.r.t._ Close on March 16, 2020
+   * Normalized_Diff: Diff _w.r.t_ Diff on March 16, 2020
+* Added four date attributes to the original class
+   * start_date='2019-07-23'
+   * moveback_date='2019-10-15' (5 months back to March 16, 2020)
+   * reference_date='2020-03-16' 
+   * current_date='2020-07-20' (data collection date)
+
+   
 
 ## Baseline Study
 
