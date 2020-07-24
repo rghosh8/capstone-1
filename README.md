@@ -53,6 +53,12 @@ The time series stock data used in this capstone was collected from [Yahoo Finan
 ---
 ![](./figures/splunk_candlestick.png)
 ---
+
+* Splunk($):    0-225
+* Datadog($):   0-100
+* Dynatrace($): 0-45
+* New Relic($): 0-100
+
 ![](./figures/heatmap.png )
 ---
 For this analysis, stock close price($) was considered to be the key metric. 
