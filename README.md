@@ -122,7 +122,7 @@ The chart suggests the time seris data is hardly stationary with time varying pr
 
 #### Stationarity Testing 
 
-First, we performed ADF stationarity testing on the Pct_Diff values for all companies and compile following startistical parameter values. It can be observed that except for 
+First, we performed ADF stationarity testing on the Pct_Diff values for all companies and compile following startistical parameter values. It can be observed that except for Splunk during 10/15/19-03/16/20, all time series segments are stationary. 
 
 |           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
 |-----------|:-------------:|:-------------:|:-------------:|:-------------:|--------------|
@@ -137,22 +137,25 @@ First, we performed ADF stationarity testing on the Pct_Diff values for all comp
 |           | 5%            |-2.896616e+00  |-2.895784e+00  |-2.895784e+00|-2.895784e+00|
 |           | 10%           |-2.585482e+00  |-2.585038e+00  | -2.585038e+00| -2.585038e+00|
 
+---
+The stationarity of the time series segements could be further evaluated from the follow control chart of Pct_Diff. 
 ![](./figures/before_after_diff_distribution.png)
+
+#### Statistical Analysis
 
 ![](./figures/before_after_Histogram_Normalized_Diff.png)
 
 ![](./figures/cumul.png)
 
-### Statistical Parameter Calculation
 
 |           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
 |-----------|:-------------:|:-------------:|:-------------:|:-------------:|--------------|
-|Before/On  | Mean          |  -0.228    |  -0.039    |   0.008   |  -0.222   |
-|3/16/20    | Std. Dev.     |   4.612    |   1.699    |    1.101   |   1.781   |
+|10/15/19-  | Mean          |  -0.228    |  -0.039    |   0.008   |  -0.222   |
+|03/16/20    | Std. Dev.     |   4.612    |   1.699    |    1.101   |   1.781   |
 |           | Std. Error    |0.45|0.166|0.107|0.174|
 |           | Rise Frac.   |0.53|0.50|0.51|0.47|
-|After      | Mean          |1.28|0.733|0.275|0.326|
-|3/16/20    | Std. Dev.     |5.582|2.727|1.263|1.983|
+|03/17/20-      | Mean          |1.28|0.733|0.275|0.326|
+|07/20/20    | Std. Dev.     |5.582|2.727|1.263|1.983|
 |           | Std. Error    |0.598|0.292|0.135|0.213|
 |           | Rise Frac.       |0.63|0.67|0.62|0.55|
 
@@ -160,7 +163,7 @@ First, we performed ADF stationarity testing on the Pct_Diff values for all comp
 ## Hypothesis Testing for the Stock Performances of Monitoring Companies
 
 
-### Frequentist Hypothesis Testing 
+#### Frequentist Hypothesis Testing 
 
 
 |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
@@ -169,7 +172,7 @@ First, we performed ADF stationarity testing on the Pct_Diff values for all comp
 | p_value       |   0.045554    |   0.023007    |    0.124407   |   0.047177   |
 
 
-### Bayesian Testing 
+#### Bayesian Testing 
 
 ### Comparsion between 4 Months Before and After March 16, 2020
 ![](./figures/bayesian_test.png)
