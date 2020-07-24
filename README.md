@@ -126,18 +126,13 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 
 ## Bayesian Testing 
 
+###Comparsion between 4 Months Before and After March 16, 2020
 ![](./figures/bayesian_test.png)
-
+###Monthly Evoluton of Stock Prices After March 16, 2020
 ![](./figures/monthly_evolution.png)
 
 
-pd.DataFrame(stationary['New Relic'])
-before	after
-ADF	-4.133037	-9.941739e+00
-p-value	0.000854	2.653223e-17
-1%	-3.496149	-3.508783e+00
-5%	-2.890321	-2.895784e+00
-10%	-2.582122	-2.585038e+00
+
 
 
 ## Summary
