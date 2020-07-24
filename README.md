@@ -34,7 +34,7 @@ A Frequestist hypothesis testing methodology will be used. It entails following 
    scipy.stats.ttest_ind(a, b, axis=0, equal_var=False, nan_policy='propagate')
   ```
 * Compare p-value with \alpha to draw a conclusion:
-  * if p<=\alpha, Reject Null in favor of Alternative
+  * if p<=$\alpha$, Reject Null in favor of Alternative
   * if p>alpha, Fail to reject Null _w.r.t_ Alternative
 
 
