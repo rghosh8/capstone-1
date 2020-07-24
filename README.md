@@ -45,8 +45,13 @@ The time series stock data used in this capstone was collected from [Yahoo Finan
 ### Raw Data 
 
 ![](./figures/raw_data.png)
+---
 ![](./figures/splunk_candlestick.png)
+---
 ![](./figures/heatmap.png )
+---
+For this analysis, stock close price($) was considered to be the key metric. 
+
 ![](./figures/comparison.png )
 
 ### Transformed Data 
@@ -62,6 +67,11 @@ The time series stock data used in this capstone was collected from [Yahoo Finan
    * moveback_date='2019-10-15' (5 months back to March 16, 2020)
    * reference_date='2020-03-16' 
    * current_date='2020-07-20' (data collection date)
+* Drop the first row with Null
+
+---
+![](./figures/splunk_stock_table.png)
+![](./figures/splunk_data_info.png)
 
    
 
