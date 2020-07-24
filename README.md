@@ -126,9 +126,9 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 
 ## Bayesian Testing 
 
-###Comparsion between 4 Months Before and After March 16, 2020
+### Comparsion between 4 Months Before and After March 16, 2020
 ![](./figures/bayesian_test.png)
-###Monthly Evoluton of Stock Prices After March 16, 2020
+### Monthly Evoluton of Stock Prices After March 16, 2020
 ![](./figures/monthly_evolution.png)
 
 
