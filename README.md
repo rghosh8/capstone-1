@@ -198,16 +198,17 @@ With this t-test, following conclusions could be drawn:
 
 #### Bayesian Testing 
 
-### Comparsion between 4 Months Before and After March 16, 2020
+##### Comparsion between (10/15/19-03/16/20) and (03/17/19-07/20/20)
 ![](./figures/bayesian_test.png)
 ### Monthly Evoluton of Stock Prices After March 16, 2020
 ![](./figures/monthly_evolution.png)
 
 
-## Summary
+## Recommendation
 
-*  Answer if Covid indeed affected stock prices of Big 3 monitoring companies.
-*  Answer who is gaining most among the Big 3.
+*  Monitoring companies are, in general, doing better. They are good bets for investments. 
+*  Datadog must not lose the momentum they gain due to rapid rise of cloud computing following the pandemic. Although they have strong Q2, their stock performance is dwindling in July. 
+*  Dynatrace must reinvest themselves and focus on cloud monitoring more to respond to the change in the market. 
 
 
 
