@@ -71,7 +71,7 @@ For this analysis, stock close price($) was considered to be the key metric.
 
 ---
 ![](./figures/splunk_stock_table.png)
-![](./figures/splunk_data_info.png)
+![](./figures/data_info.png)
 
    
 
