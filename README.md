@@ -82,11 +82,9 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 |           | 10%           |-2.5850381719848565 |
 
 
+## Exploratory Data Analysis
 
-
-## Hypothesis Testing for the Stock Performances of Monitoring Companies
-
-## Stationarity Testing 
+### Stationarity Testing 
 
 |           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
 |-----------|:-------------:|:-------------:|:-------------:|:-------------:|--------------|
@@ -101,16 +99,13 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 |           | 5%            |-2.896616e+00  |-2.895784e+00  |-2.895784e+00|-2.895784e+00|
 |           | 10%           |-2.585482e+00  |-2.585038e+00  | -2.585038e+00| -2.585038e+00|
 
-### Data Analysis
-
-
-
 ![](./figures/before_after_diff_distribution.png)
 
 ![](./figures/before_after_Histogram_Normalized_Diff.png)
 
 ![](./figures/cumul.png)
 
+### Statistical Parameter Calculation
 
 |           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
 |-----------|:-------------:|:-------------:|:-------------:|:-------------:|--------------|
@@ -123,7 +118,11 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 |           | Std. Error    |0.598|0.292|0.135|0.213|
 |           | Rise Frac.       |0.63|0.67|0.62|0.55|
 
-### Hypothesis Testing 
+
+## Hypothesis Testing for the Stock Performances of Monitoring Companies
+
+
+### Frequentist Hypothesis Testing 
 
 
 |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
@@ -132,15 +131,12 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 | p_value       |   0.045554    |   0.023007    |    0.124407   |   0.047177   |
 
 
-## Bayesian Testing 
+### Bayesian Testing 
 
 ### Comparsion between 4 Months Before and After March 16, 2020
 ![](./figures/bayesian_test.png)
 ### Monthly Evoluton of Stock Prices After March 16, 2020
 ![](./figures/monthly_evolution.png)
-
-
-
 
 
 ## Summary
@@ -149,13 +145,6 @@ Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alte
 *  Answer who is gaining most among the Big 3.
 
 
----
-## OKR
 
-~~July 20: Collect data~~
-~~July 21: Data reading and basic EDA~~
-* July 22: Complete EDA and start hypothesis testing
-* July 23: Complete hypothesis testing
-* July 24: Refinement and Presentation
 
 
