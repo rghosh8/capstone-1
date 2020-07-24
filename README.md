@@ -182,12 +182,17 @@ A t-test was performed based on the function mentioned in the Methodology sectio
 
 With this t-test, following conclusions could be drawn:
 
-* Except for Dynatrace, all monitoring companies are doing better after 03/16/20.
-* Datadog appears to be gaining most.
-* Supporting ground Truth
-   ** Datadog has been a top-performing stock in Q2 [Link](https://www.fool.com/investing/2020/07/04/why-datadog-stock-surged-22-in-june.aspx)
-* Possible Cause
-   ** Covid has driven a increase in online workplace. It means there is a increase need for cloud computing, as evident from the massive growth of GCP, Azure, and AWS in Q2-20. With cloud computing, there is an increased need for real-time monitoring of cloud resources. Datadog fits that bill perfectly. Dynatrace, on the other hand, focused mostly on traditonal code-level monitoring. A code-level monitoring solution not critical important as cloud resource monitoring in the present scheme of things.  
+* Except for Dynatrace, all monitoring companies are doing better after 03/16/20
+
+* Datadog appears to be gaining most
+
+* Dynatrace is lagging behind
+
+* New Relic and Splunk are doing OK.
+
+* Supporting ground Truth: Datadog has been a top-performing stock in Q2 [Link](https://www.fool.com/investing/2020/07/04/why-datadog-stock-surged-22-in-june.aspx)
+   
+* Possible Cause: Covid has driven a increase in online workplace. It means there is a increase need for cloud computing, as evident from the massive growth of GCP, Azure, and AWS in Q2-20. With cloud computing, there is an increased need for real-time monitoring of cloud resources. Datadog fits that bill perfectly. Dynatrace, on the other hand, focused mostly on traditonal code-level monitoring. A code-level monitoring solution not critical important as cloud resource monitoring in the present scheme of things.  
    
 
 
