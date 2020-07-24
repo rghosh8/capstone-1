@@ -202,9 +202,47 @@ With this t-test, following conclusions could be drawn:
 #### Bayesian Testing 
 
 ##### Comparsion between (10/15/19-03/16/20) and (03/17/19-07/20/20)
+
+The result from a Bayesian A/B testing is shown in the following chart.  
+
 ![](./figures/bayesian_test.png)
+
+Following conclusions can be drawn:
+
+* All companies have right shifted left area which can be corroborated to the general observation that the stock performance has seen some improvement after March 16, 2020. 
+* Datadog has least overlaps between blue and red regions. That validates our observation from the t-test. 
+*  What is confounding that Dynatrace seems to have a considerably lower overlap. It could be attributed to sampling error or out of distribution issues. We made somewhat weak assumption that each daily % change is not impacted by the previous daily % change. A further examination is needed to ensure greater precision.
+
+
 ### Monthly Evoluton of Stock Prices After March 16, 2020
+
+The result from a month-over-month Bayesian A/B testing is shown in the following chart.  
+
+Legends:
+
+* Red Line: Mid March-April
+* Violet Line: Mid April-May
+* Green Line: Mid May-June
+* Yellow Line: Mid June-July
+
 ![](./figures/monthly_evolution.png)
+
+
+Following conclusions can be drawn:
+
+* <b>Splunk:</b> After relative slow growth in previous two months, Splunk had rapid growth from Mid May-June. However, their growth dramatically slow down in July. 
+
+* <b>Datadog:</b> Datadog made a massive progress from Mid April-May. However, since June, their growhth has slow down. 
+
+* <b>Dynatrace:</b> Dynatrace made a some progress from Mid April-May. However, their growth rate is slowly declining. 
+
+* <b>New Relic:</b> New Relic made a moderate progress from Mid April-May. However, their growth rate is gradually declining. 
+
+----
+
+## General Conclusion
+
+It seems monitoring stock is performing before after March 16, 2020. The background study suggests the growth of cloud computing and the rise of monitoring need are possible reasons behind the trend. However, the month-by-month Bayesian A/B testing suggests that monitoring companies are slowling losing momentum they have in April-May. In fact, a recent dip in Datadog stock on July 22, 2020 is concerning. [Link](https://finance.yahoo.com/news/datadog-ddog-stock-sinks-market-214509758.html) 
 
 
 ## Recommendation
