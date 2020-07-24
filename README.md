@@ -143,7 +143,7 @@ The stationarity of the time series segements could be further evaluated from th
 
 #### Statistical Analysis
 
-![](./figures/before_after_Histogram_Normalized_Diff.png)
+<!-- ![](./figures/before_after_Histogram_Normalized_Diff.png) -->
 
 ![](./figures/cumul.png)
 
