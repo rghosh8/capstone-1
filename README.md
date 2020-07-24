@@ -52,7 +52,7 @@ The time series stock data used in this capstone was collected from [Yahoo Finan
 ---
 For this analysis, stock close price($) was considered to be the key metric. 
 
-![](./figures/comparison.png )
+
 
 ### Transformed Data 
 
@@ -68,6 +68,7 @@ For this analysis, stock close price($) was considered to be the key metric.
    * reference_date='2020-03-16' 
    * current_date='2020-07-20' (data collection date)
 * Drop the first row with Null
+* Two sub-samples from the dataset has been picked out, One from <b>10/15/19-03/16/20</b> and another from <b>03/17/20-07/20/20</b>, because we want to compare stock performance before and after 03/16/20
 
 ---
 ![](./figures/splunk_stock_table.png)
@@ -81,48 +82,59 @@ First a baseline study has been performed with the S&P 500 data with the same ti
 
 ![](./figures/baseline.png )
 
-<p align="center">
- <table style="width:100%">
-
-|           |   S&P 500  |     
-| ----------|:----------:|
-| t_stat    |  -1.663    |  
-| p_value   |   0.097    |   
-</table>
-</p>
-
-Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alternative hypothesis. It means we can conclude that Covid-19 has no impact on S&P 500 stock performance. 
-
 #### Stationarity Test for S&P 500 Data
 
 
 |           |               |     S&P 500   |     
 |-----------|:-------------:|:-------------:|
-|Before/On  | ADF           |-4.133036836860251|   
-|3/16/20    | p-value       |0.0008536580558826142     |      
+|.          | ADF           |-4.133036836860251|   
+|10/15/19-
+03/16/20    | p-value       |0.0008536580558826142     |      
 |           | 1%            |-3.4961490537199116      |     
 |           | 5%            |-2.8903209639580556       |     
 |           | 10%           | -2.5821223452518263     |    
-|After      | ADF           |-9.94173917906023     |  
-|3/16/20    | p-value       | 2.6532228493611306e-17   |  
-|           | 1%            |-3.5087828609430614  |
+|     | ADF           |-9.94173917906023     |  
+|03/17/20-    | p-value       | 2.6532228493611306e-17   |  
+|07/20/20          | 1%            |-3.5087828609430614  |
 |           | 5%            |-2.895783561573195  |
 |           | 10%           |-2.5850381719848565 |
+
+#### Hypothesis Testing
+
+|           |   S&P 500  |     
+| ----------|:----------:|
+| t_stat    |  -1.663    |  
+| p_value   |   0.097    |   
+
+
+Because p_value > 0.05, the Null hypothesis can not be rejected _w.r.t_ the Alternative hypothesis. It means we can conclude that Covid-19 has no impact on S&P 500 stock performance. 
+
+
 
 
 ## Exploratory Data Analysis
 
-### Stationarity Testing 
+For this EDA, stock closing price has been considered as the core metric for the sake of brevity. 
+
+![](./figures/comparison.png )
+
+---
+The chart suggests the time seris data is hardly stationary with time varying properties. That is why we performed the percentage difference operation on stock close price. Henceforth, we will be using <b>Pct_Diff</b> as our experimental variable.  
+
+#### Stationarity Testing 
+
+First, we performed ADF stationarity testing on the Pct_Diff values for all companies and compile following startistical parameter values. It can be observed that except for 
 
 |           |               |     Splunk    |     Datadog   |   Dynatrace   |   New Relic  | 
 |-----------|:-------------:|:-------------:|:-------------:|:-------------:|--------------|
-|Before/On  | ADF           |-0.743115.     |   -9.193318   |   -3.577116   |  -4.133037   |
-|3/16/20    | p-value       |0.835263       |   2.094745e-15|  0.006214     |   0.000854   |
+|10/15/19-  | ADF           |-0.743115.     |   -9.193318   |   -3.577116   |  -4.133037   |
+|3/16/20    | p-value       |<b>0.835263</b>|   2.094745e-15|  0.006214     |   0.000854   |
 |           | 1%            |-3.500379      |   -3.494850   |  -3.496149.   |  -3.496149   |
 |           | 5%            |-2.892152      |   -2.889758   |-2.890321      |   -2.890321  |
 |           | 10%           |-2.583100      |   -2.581822   | -2.582122.    |   -2.582122  |
-|After      | ADF           |-6.176711      | -1.071835e+01 | -9.697205e+00 |-9.941739e+00 |
-|3/16/20    | p-value       |6.603631e-08   |  3.198197e-19 |  1.096254e-16 | 2.653223e-17 |
+|      | ADF           |-6.176711      | -1.071835e+01 | -9.697205e+00 |-9.941739e+00 |
+|3/17/20-
+|7/20/20 p-value       |6.603631e-08   |  3.198197e-19 |  1.096254e-16 | 2.653223e-17 |
 |           | 1%            |-3.510712e+00  |-3.508783e+00  |-3.508783e+00|-3.508783e+00|
 |           | 5%            |-2.896616e+00  |-2.895784e+00  |-2.895784e+00|-2.895784e+00|
 |           | 10%           |-2.585482e+00  |-2.585038e+00  | -2.585038e+00| -2.585038e+00|
