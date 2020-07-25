@@ -8,6 +8,8 @@ from data_frame import *
 from static import *
 import numpy as np
 import calmap
+from scipy import stats
+from parameters import *
 
 def stationarity_test(filepath:str, col:str, reference_date, current_date, moveback_date):
     data = data_frame(filepath, reference_date, current_date, moveback_date).before_after
@@ -35,11 +37,7 @@ def stationarity_test(filepath:str, col:str, reference_date, current_date, moveb
     
     return stationary
 
-def vcdf(value, array):
-    def cdf(value, array):
-        return (array<value).sum()/len(array)
-
-    return np.vectorize(cdf, excluded = ['array'])
+vcdf = np.vectorize(lambda value, array: (array<value).sum()/len(array), excluded = ['array'])
 
 
 def confidence_interval(mean, se, pct:str):
@@ -75,7 +73,7 @@ def create_heatmap(ax, fig, series, year=2020, cmap='YlGn'):
     set_axis_sizes(ax)
 
 
-def statistics(filepath):
+def statistics(filepaths):
     '''
      Compute sample mean, sample std, and std. error for a sample
         input: a filepath (str)
@@ -84,24 +82,58 @@ def statistics(filepath):
     before_after_dict = dict()
     prop = dict()
 
-    data = data_frame(filepath, reference_date, current_date, moveback_date).before_after
-    before, after = data.before, data.after
+    for filepath in filepaths:
+        data = data_frame(filepath, reference_date, current_date, moveback_date).before_after
+        before, after = data.before, data.after
 
-    before_after_dict[refer[filepath]] = {'before': before['Diff'],'after': after['Diff']}
-    prop[refer[filepath]] = \
-         {
-             'before': 
-             {
-              'mean': round(before['Pct_Diff'].mean(),3), 
-              'std':  round(before['Pct_Diff'].std(), 3), 
-              'se':   round(before['Pct_Diff'].sem(), 3)
-             },
-              'after': 
-             {
-              'mean': round(after['Pct_Diff'].mean(), 3), 
-              'std':  round(after['Pct_Diff'].std(), 3), 
-              'se':   round(after['Pct_Diff'].sem(), 3)
-              }
-        }
+        before_after_dict[refer[filepath]] = {'before': before['Pct_Diff'],'after': after['Pct_Diff']}
+        prop[refer[filepath]] = \
+            {
+                'before': 
+                {
+                'mean': round(before['Pct_Diff'].mean(),3), 
+                'std':  round(before['Pct_Diff'].std(), 3), 
+                'se':   round(before['Pct_Diff'].sem(), 3)
+                },
+                'after': 
+                {
+                'mean': round(after['Pct_Diff'].mean(), 3), 
+                'std':  round(after['Pct_Diff'].std(), 3), 
+                'se':   round(after['Pct_Diff'].sem(), 3)
+                }
+            }
 
-    return before_after_dict, prop
+    return prop
+
+def t_test(filepaths):
+    hyp_test = dict()
+    for filepath in filepaths:
+        data = data_frame(filepath, reference_date, current_date, moveback_date).before_after
+        before, after = data.before['Pct_Diff'], data.after['Pct_Diff']
+        stat, p_val = stats.ttest_ind(before, after, axis=0, equal_var=False, nan_policy='omit')
+        hyp_test[refer[filepath]] = {'t_stat': stat, 'p_val': p_val}
+
+    return hyp_test
+
+def draw_heatmap(filepaths, fig, axs):
+    for filepath, ax in zip(filepaths, axs): 
+        test = data_frame(filepath, reference_date, current_date, moveback_date).df
+        series = test['Close']
+        create_heatmap(ax, fig, series)
+        ax.set_title(f'{refer[filepath]} Stock Closing Price($) in 2020', fontdict=font, size=30)
+        set_axis_sizes(ax, 30)
+
+def bayesian_count(filepaths):
+    bayesian_count={}
+    for filepath in filepaths:
+        data = data_frame(filepath, reference_date, current_date, moveback_date).before_after
+        before, after = data.before, data.after
+        before_count = before[before[test_dim]>0][test_dim].count() / before[test_dim].count()
+        after_count = after[after[test_dim]>0][test_dim].count() / after[test_dim].count()
+        bayesian_count[refer[filepath]] = \
+                                        {
+                                        'before': {'positive': before_count, 'negative': 1-before_count, 'count': before['Pct_Diff'].count()},
+                                        'after' : {'positive': after_count, 'negative': 1-after_count, 'count': after['Pct_Diff'].count()}
+                                        }
+
+    return bayesian_count

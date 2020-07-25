@@ -2,7 +2,7 @@ import pandas as pd
 
 class data_frame(object):
     # parse basic statistical properties of data
-    def __init__(self, filepath, reference_date: str, current_date: str, moveback_date:str):
+    def __init__(self, filepath:str, reference_date:str='2020-03-16', current_date:str='2020-07-20', moveback_date:str='2019-10-15'):
         self.filepath = filepath
         self.df = pd.read_csv(self.filepath)
         
